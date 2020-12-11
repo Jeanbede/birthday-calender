@@ -1,0 +1,8 @@
+h1{
+    font-style: italic;
+    text-transform: capitalize;
+    color: green;
+    text-shadow: 2px aliceblue;
+    text-align: center;
+    font-weight: bold; 
+}
