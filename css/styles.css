@@ -15,3 +15,16 @@ p {
     margin-right: 720px;
     text-align: center;
 }
+h2:hover{
+    color: rgb(241, 7, 7);
+    background-color: rgb(6, 240, 240);
+}
+ul{
+    color: rgb(5, 231, 201);
+    background-color: rgb(0, 102, 128);
+    list-style: none ;
+    font-style: italic;
+    font-weight: bold;
+    }
+    
+    
