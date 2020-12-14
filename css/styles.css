@@ -2,7 +2,7 @@ h1{
     font-style: italic;
     text-transform: capitalize;
     color: green;
-    text-shadow: 2px aliceblue;
+    text-shadow: 2px rgb(3, 21, 37);
     text-align: center;
     font-weight: bold; 
 }
