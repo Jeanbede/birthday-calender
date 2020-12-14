@@ -11,26 +11,37 @@
 </head>
 <body>
         <h1>Get to know your birthday date!!</h1><br><br>
-<form>
+<form action="script.js" method="get">
     <p>Know Your birthday Day:</p><br>
     Date<br>
-    <input type="number" number="date" placeholder="date"><br><br>
+    <input type="number" value="(1-31)" placeholder="date"><br><br>
     Months<br>
-    <input type="text" name="yourname" placeholder="months"><br><br>
+    <input type="text" placeholder="months"><br><br>
     Years<br>
-    <input type="number" number="years" placeholder="years"><br><br>
+    <input type="number"  placeholder="years"><br><br>
     
         <p>Please select your gender:</p>
-        <input type="radio" id="male" value="male">
+        
+        <input type="radio" name="gender" id="male" value="male">
         <label for="male">Male</label><br>
-        <input type="radio" id="female"  value="female">
+        <input type="radio" name="gender" id="female"  value="female">
         <label for="female">Female</label><br>
-             
-    <input type="submit" value="submit" onclick="days()">
+       
+     
+    
+    <button type="button" onclick="alert('My Birth Day!!!!')">FIND!</button>
 </form>
 <p>Get your birthday Day below:</p><br>
 
 <input type="text" name="days" placeholder="resuts"><br><br>
+
+
+<select>
+    <option value="1">Feed-Back</option>
+    <option value="2">Satisfied !</option>
+    <option value="3">Unsatisfied</option>
+</select>
+<button type="submit" onclick="alert('Thank you!!')">submit</button>
 
     <script src="js/script.js" type="text/javascript"></script>
 </body>
