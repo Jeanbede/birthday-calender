@@ -17,64 +17,68 @@
     <form>
    <strong>Date</strong><br>
   
-   <select>   
+   <select>  
+
+    <date id="date">
+
         <option value="0">Choose Date</option>
-<date id="date">
-       <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>11</option>
-        <option>12</option>
-        <option>13</option>
-        <option>14</option>
-        <option>15</option>
-        <option>16</option>
-        <option>17</option>
-        <option>18</option>
-        <option>19</option>
-        <option>20</option>
-        <option>21</option>
-        <option>22</option>
-        <option>23</option>
-        <option>24</option>
-        <option>25</option>
-        <option>26</option>
-        <option>27</option>
-        <option>28</option>
-        <option>29</option>
-        <option>30</option>
-        <option>31</option>
+        <option value="1">1 </option>
+       <option value="2"> 2</option>
+       <option value="3"> 3</option>
+       <option value="4"> 4</option>
+       <option value="5"> 5</option>
+       <option value="6"> 6</option>
+       <option value="7"> 7</option>
+       <option value="8"> 8</option>
+       <option value="9"> 9</option>
+       <option value="10"> 10</option>
+       <option value="11"> 11</option>
+       <option value="12"> 12</option>
+       <option value="13"> 13</option>
+       <option value="14"> 14</option>
+       <option value="15"> 15</option>
+       <option value="16"> 16</option>
+       <option value="17"> 17</option>
+       <option value="18"> 18</option>
+       <option value="19"> 19</option>
+       <option value="20"> 20</option>
+       <option value="21"> 21</option>
+       <option value="22"> 22</option>
+       <option value="23"> 23</option>
+       <option value="24"> 24</option>
+       <option value="25"> 25</option>
+       <option value="26"> 26</option>
+       <option value="27"> 27</option>
+       <option value="28"> 28</option>
+       <option value="29"> 29</option>
+       <option value="30"> 30</option>
+       <option value="31"> 31</option>
+   
         </select><br><br>
  
 
          <strong>Months </strong><br>
     <Months id="months"><br>
        
-    <select>
-    <option value="0">Choose Month</option>
-        <option value="1">January</option>
-        <option value="2">February</option>
-        <option value="3">March</option>
-        <option value="4">April</option>
-        <option value="5">May</option>
-        <option value="6">June</option>
-        <option value="7">July</option>
-        <option value="8">August</option>
-        <option value="9">September</option>
-        <option value="10">October</option>
-        <option value="11">November</option>
-        <option value="12">December</option>
+        <select>
+    <option value="Choose Month">Choose Month</option>
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="august">August</option>
+        <option value="september">September</option>
+        <option value="october">October</option>
+        <option value="november">November</option>
+        <option value="december">December</option>
     </select><br><br>
 
     <strong>Years</strong><br>
     <years id="years">
-    <input type="number"  placeholder="years"><br>
+    <input type="number" min="1900" name="years"  placeholder="years"><br>
     
         <p><strong>Please select your gender:</strong></p>
         
@@ -82,19 +86,17 @@
         <label for="male"><strong>Male</strong></label><br>
         <input type="radio" name="gender" id="female"  value="female">
         <label for="female"><strong>Female</strong></label><br>          
-    <input type="submit" value= "submit">
+    <input type="button" value= "submit" onclick="results.alert('date','months', 'years')">
     <input type="reset" value="reset"><br><br>
   
-    <!-- onclick="alert('My Birth Day!!!!')" -->
-    <!-- onclick="alert('My Birth Day!!!!')" -->
-
+    
 <p><strong>Get your birth-Date and Day  below:</strong></p>
 
 <strong>Date</strong><br>
-<input type="text" name="date" placeholder="resuts"><br>
+<input type="text" name="result1" placeholder="resuts"><br>
 
 <strong>Day</strong> 
-<input type="text" name="days" placeholder="resuts">
+<input type="text" name="result2" placeholder="resuts">
 
 <strong>Akan Name</strong> 
 <input type="text" name="days" placeholder="resuts"><br><br>
@@ -118,6 +120,6 @@
     <li>WebSite: https://jeanbede.github.io/birthday-calender/</li><br>
     </ul>
     </footer>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
