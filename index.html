@@ -19,7 +19,7 @@
   
    <select>   
         <option value="0">Choose Date</option>
-
+<date id="date">
        <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -52,9 +52,11 @@
         <option>31</option>
         </select><br><br>
  
-    <strong>Months</strong><br>
+
+         <strong>Months </strong><br>
+    <Months id="months"><br>
+       
     <select>
-   
     <option value="0">Choose Month</option>
         <option value="1">January</option>
         <option value="2">February</option>
@@ -71,6 +73,7 @@
     </select><br><br>
 
     <strong>Years</strong><br>
+    <years id="years">
     <input type="number"  placeholder="years"><br>
     
         <p><strong>Please select your gender:</strong></p>
@@ -79,27 +82,34 @@
         <label for="male"><strong>Male</strong></label><br>
         <input type="radio" name="gender" id="female"  value="female">
         <label for="female"><strong>Female</strong></label><br>          
-    <input type="submit" value="submit">
+    <input type="submit" value= "submit">
     <input type="reset" value="reset"><br><br>
   
     <!-- onclick="alert('My Birth Day!!!!')" -->
     <!-- onclick="alert('My Birth Day!!!!')" -->
 
 <p><strong>Get your birth-Date and Day  below:</strong></p>
-<strong>Day</strong> <br>
-<input type="text" name="days" placeholder="resuts"><br>
 
 <strong>Date</strong><br>
 <input type="text" name="date" placeholder="resuts"><br>
+
+<strong>Day</strong> 
+<input type="text" name="days" placeholder="resuts">
+
+<strong>Akan Name</strong> 
+<input type="text" name="days" placeholder="resuts"><br><br>
+
+
+
 <select>
     <option value="1">Feed-Back</option>
     <option value="2">Satisfied !</option>
     <option value="3">Unsatisfied</option>
 </select>
-<button type="submit" >submit</button><br><br>
+<button type="submit" onclick="alert('Thank you!!')">Send</button><br><br>
 </form>
 
-<!-- onclick="alert('Thank you!!')" -->
+
 <footer>
     <h2>Do you know the Day you were born!!!</h2>
 <ul class="slogan">
