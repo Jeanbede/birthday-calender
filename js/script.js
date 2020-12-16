@@ -43,43 +43,61 @@ if( yearEntered<1900){
     form.result1.value = yearEntered 
     }
 
+    function myFunction() {  
+var newMale= ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+var newFemale= ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];   
+
+newMale.forEach(function(newmale) {
+    alert('newmale');
+});
+
+
+
+document.getElementById("male").innerHTML = newMale;
+document.getElementById("female").innerHTML = newFale;
+
+if (gender === "male") {
+    alert("Your Akan Name is " + newMale[d])
+
+} else
+ if (gender === "female") {
+    alert("Your Ghanian akan Name is " + newFemale[d])
+        
 
 
 
 
-//     var val1 = parseInt(form.day.value, 10)
-//     if ((val1 < 0) || (val1 > 31)) {
-//         alert("")
-//     }
-//     var val2 = parseInt(form.months.value, 10)
-//     if ((val2 < 0) || (val2 > 12)) {
-//         alert("")
-//     }
-//     var val2x = parseInt(form.months.value, 10)
-//     var val3 = parseInt(form.years.value, 10)
-//     if (val3 < 1700) {
-//         alert("")
-//     }
-//     if (val2 == 1) {
-//         val2x = 13;
-//         val3 = val3 - 1
-//     }
-//     if (val2 == 2) {
-//         val2x = 14;
-//         val3 = val3 - 1
-//     }
-//     var val4 = parseInt(((val2x + 1) * 3) / 5, 10)
-//     var val5 = parseInt(val3 / 4, 10)
-//     var val6 = parseInt(val3 / 100, 10)
-//     var val7 = parseInt(val3 / 400, 10)
-//     var val8 = val1 + (val2x * 2) + val4 + val3 + val5 - val6 + val7 + 2
-//     var val9 = parseInt(val8 / 7, 10)
-//     var val0 = val8 - (val9 * 7)
-//     form.result1.value = months[val2] + " " + form.day.value + ", " + form.years.value
-//     form.result2.value = day[val0]
+
+
+// function myFunction() {
+//     var x=document.getElementById("male") .value;
+//     var y=document.getElementById("female") .value;
+//     document.getElementById("gender") .innerHTML= x, y;
 // }
 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+   <div id="result"></div>
+   <button onclick="embedElements()">Show Data</button>
+<script>
+{
+   const myArray = ["stone","paper","scissors"];
+   function embedElements(){
+      myArray.forEach(el => {
+         document.getElementById('result').innerHTML +=`<div>${el}</div><br />`;
+         // here result is the id of the div present in the dom
+      });
+   };
+}
+</script>
+</body>
+</html>
 
 
 

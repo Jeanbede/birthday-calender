@@ -14,12 +14,12 @@
 
     <p><strong>Know Your birthday Day:</strong></p>
 
-    <form>
+<form>
    <strong>Date</strong><br>
   
    <select>  
 
-    <date id="date">
+    <div id="date">
 
         <option value="0">Choose Date</option>
         <option value="1">1 </option>
@@ -58,7 +58,7 @@
  
 
          <strong>Months </strong><br>
-    <Months id="months"><br>
+    <div id="months"><br>
        
         <select>
     <option value="Choose Month">Choose Month</option>
@@ -77,18 +77,17 @@
     </select><br><br>
 
     <strong>Years</strong><br>
-    <years id="years">
+    <div id="years">
     <input type="number" min="1900" name="years"  placeholder="years"><br>
     
         <p><strong>Please select your gender:</strong></p>
-        
+        <p id="gender"></p>
         <input type="radio" name="gender" id="male" value="male">
         <label for="male"><strong>Male</strong></label><br>
         <input type="radio" name="gender" id="female"  value="female">
         <label for="female"><strong>Female</strong></label><br>          
-    <input type="button" value= "submit" onclick="results.alert('date','months', 'years')">
-    <input type="reset" value="reset"><br><br>
-  
+    <input type="submit" value= "submit">   
+    <input type="reset" value="reset"><br><br>  
     
 <p><strong>Get your birth-Date and Day  below:</strong></p>
 
@@ -99,8 +98,7 @@
 <input type="text" name="result2" placeholder="resuts">
 
 <strong>Akan Name</strong> 
-<input type="text" name="days" placeholder="resuts"><br><br>
-
+<input type="text" name="akanname" value="akanname" placeholder="resuts"><br><br>
 
 
 <select>
