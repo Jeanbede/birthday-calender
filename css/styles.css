@@ -2,9 +2,10 @@ h1{
     font-style: italic;
     text-transform: capitalize;
     color: rgb(20, 121, 20);
-    text-shadow: 2px rgb(3, 21, 37);
+    text-shadow: 4px 4px rgb(245, 242, 242);
     text-align: center;
-    font-weight: bold; 
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 body {
@@ -40,12 +41,13 @@ ul{
     font-weight: bold;
     }
     nav:hover{
-        background-color: #2e07ca;
-        /* color: #f10a0a; */
+        background-color: #f2f1f7;
+        color: #0a0a0a;
         margin-left: 850px;
         margin-right: 850px;
     }
-    nav{
-         
-    }
-    
+  .slogan:hover{
+font-size: large;
+font-weight: bold;
+
+  }
