@@ -70,8 +70,8 @@ if (gender === "male") {
 
 
 // function myFunction() {
-//     var x=document.getElementById("male") .value;
-//     var y=document.getElementById("female") .value;
+//     var x=document.getElementById("male") .value();
+//     var y=document.getElementById("female") .value();
 //     document.getElementById("gender") .innerHTML= x, y;
 // }
 

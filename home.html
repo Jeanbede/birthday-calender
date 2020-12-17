@@ -1,52 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>day-you-were-born</title>
-
-    <link href="bootstrap/bootstrap.css" type="text/css" rel="stylesheet">
-    <link href="css/home.css" rel="stylessheet" type="text/css">
-
-
-  </head>
-
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday-calender</title>
    
-    <h1> So hard to know the Day that you were born !!!!!</h1>
- 
-      <div id="para">Most people do know when their birthdays are,but some might not know what day of the week they were born.
-        Luckily for us, there are ways to calculate the day of the week from a specific date.</div>
+    <!-- <link href="bootstrap/bootstrap.css" type="text/css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-      <p>This website has go a calendar that will assist you to know the day that you were born as long as
-        you simple remember the <em>month,date and the year </em>that your were born. The day you were BORN  will be displayed
-        in <embed>Akan Names.</em> </p>
-    
+</head>
+<body>
+    <nav>
+        <a href="index.html">G0 BACK TO HOME!!!</a>
+            </nav>
 
-    <img src="images/ane.jpg" alt="photo" width="500px">
+        <h1>Get to know your birthday date!!</h1><br>
 
-      <a href="index.html"> TAP HERE!!!</a> 
-      <img src="images/Calculator.png" alt="calculator" width=500px height="550px">
-   
+    <p><strong>Know Your birthday Day:</strong></p>
 
-    <h2>Ghanian culture.</h2>
+
+<div class="container">
+
+   <strong>Date</strong><br>
   
-    <div id="mode">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as
-      a day name' which corresponds to the day in the week they were born.</div>
-     
+   <select>  
+    
+    <form id="date">
 
-      <footer>
-        <h3>-</h3>
-    <ul class="slogan">
-       <li> Our contacts: Tel: +4567890-(fax: 456789)</li><br>
-        <li>P.O.box: 26052-00504, Nairobi-Kenya.</li><br>
-        <li>WebSite: https://jeanbede.github.io/birthday-calender/</li><br>
-        </ul>
-        </footer>
+        <option value="0">Choose Date</option>
+        <option value="1">1 </option>
+       <option value="2"> 2</option>
+       <option value="3"> 3</option>
+       <option value="4"> 4</option>
+       <option value="5"> 5</option>
+       <option value="6"> 6</option>
+       <option value="7"> 7</option>
+       <option value="8"> 8</option>
+       <option value="9"> 9</option>
+       <option value="10"> 10</option>
+       <option value="11"> 11</option>
+       <option value="12"> 12</option>
+       <option value="13"> 13</option>
+       <option value="14"> 14</option>
+       <option value="15"> 15</option>
+       <option value="16"> 16</option>
+       <option value="17"> 17</option>
+       <option value="18"> 18</option>
+       <option value="19"> 19</option>
+       <option value="20"> 20</option>
+       <option value="21"> 21</option>
+       <option value="22"> 22</option>
+       <option value="23"> 23</option>
+       <option value="24"> 24</option>
+       <option value="25"> 25</option>
+       <option value="26"> 26</option>
+       <option value="27"> 27</option>
+       <option value="28"> 28</option>
+       <option value="29"> 29</option>
+       <option value="30"> 30</option>
+       <option value="31"> 31</option>
+   
+        </select><br><br>
+ 
 
+         <strong>Months </strong><br>
+    <div id="months"><br>
+       
+        <select>
+    <option value="Choose Month">Choose Month</option>
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="august">August</option>
+        <option value="september">September</option>
+        <option value="october">October</option>
+        <option value="november">November</option>
+        <option value="december">December</option>
+    </select><br><br>
+
+    <strong>Years</strong><br>
+    <div id="years">
+    <input type="number" min="1900" name="years"  placeholder="years"><br>
+    
+        <p><strong>Please select your gender:</strong></p>
+        <p id="gender"></p>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male"><strong>Male</strong></label><br>
+        <input type="radio" name="gender" id="female"  value="female">
+        <label for="female"><strong>Female</strong></label><br>          
+    <input type="submit" value= "submit">   
+    <input type="reset" value="reset"><br><br>  
+    
+<p><strong>Get your birth-Date and Day  below:</strong></p>
+
+<strong>Date</strong><br>
+<input type="text" name="result1" placeholder="resuts"><br>
+
+<strong>Day</strong> 
+<input type="text" name="result2" placeholder="resuts">
+
+<strong>Akan Name</strong> 
+<input type="text" name="akanname" value="akanname" placeholder="resuts"><br><br>
+
+
+<select>
+    <option value="feedback">Feed-Back</option>
+    <option value="satisfied">Satisfied !</option>
+    <option value="unsatisfied">Unsatisfied</option>
+</select>
+<button type="submit" onclick="alert('Thank you!!')">Send</button><br><br>
+</form>
+
+
+<footer>
+    <h2>Do you know the Day you were born!!!</h2>
+<ul class="slogan">
+   <li> Our contacts: Tel: +4567890-(fax: 456789)</li><br>
+    <li>P.O.box: 26052-00504, Nairobi-Kenya.</li><br>
+    <li>WebSite: https://jeanbede.github.io/birthday-calender/</li><br>
+    </ul>
+    </footer>
     <script src="js/script.js"></script>
-  </body>
-
+</body>
 </html>
