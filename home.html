@@ -6,27 +6,23 @@
     <title>Birthday-calender</title>
    
     <!-- <link href="bootstrap/bootstrap.css" type="text/css" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
 
 </head>
 <body>
     <nav>
-        <a href="index.html">G0 BACK TO HOME!!!</a>
+        <a href="index.html">G0 BACK TO INFO!!!</a>
             </nav>
 
         <h1>Get to know your birthday date!!</h1><br>
 
-    <p><strong>Know Your birthday Day:</strong></p>
+    <strong><p>Know Your birthday Day:</p></strong>
 
-
-<div class="container">
-
-   <strong>Date</strong><br>
+    <p id="your.name" &nbsp;></p>
+<form action="#" class="form.control">
   
-   <select>  
-    
-    <form id="date">
-
+    <label for="date">Date</label>
+    <select class="form.control" id="date" >
         <option value="0">Choose Date</option>
         <option value="1">1 </option>
        <option value="2"> 2</option>
@@ -59,14 +55,10 @@
        <option value="29"> 29</option>
        <option value="30"> 30</option>
        <option value="31"> 31</option>
-   
-        </select><br><br>
- 
-
-         <strong>Months </strong><br>
-    <div id="months"><br>
-       
-        <select>
+           </select><br><br>
+    
+     <label for="gender">Months</label>
+    <select class="form.control" id="month" >
     <option value="Choose Month">Choose Month</option>
         <option value="january">January</option>
         <option value="february">February</option>
@@ -81,30 +73,32 @@
         <option value="november">November</option>
         <option value="december">December</option>
     </select><br><br>
-
-    <strong>Years</strong><br>
-    <div id="years">
-    <input type="number" min="1900" name="years"  placeholder="years"><br>
+    
+        <label for="year">Years</label>
+       <input type="number" min="1900" maxlength="4" class="form.control" id="year"  placeholder="years" value=" "><br>
     
         <p><strong>Please select your gender:</strong></p>
-        <p id="gender"></p>
-        <input type="radio" name="gender" id="male" value="male">
+<div class="gender">
+        <input type="radio" name="gender" id="male" class="form.control" value="male">
         <label for="male"><strong>Male</strong></label><br>
-        <input type="radio" name="gender" id="female"  value="female">
-        <label for="female"><strong>Female</strong></label><br>          
-    <input type="submit" value= "submit">   
-    <input type="reset" value="reset"><br><br>  
+        <input type="radio" name="gender" id="female"  class="form.control"value="female">
+        <label for="female"><strong>Female</strong></label><br>      
+    </div>
+        <button id="button" type="button" class="form.control" onclick="find()">Here Your Birth-Name</button>
+    <input type="reset" value="reset" class="form.control"><br><br>  
+ 
     
 <p><strong>Get your birth-Date and Day  below:</strong></p>
 
 <strong>Date</strong><br>
-<input type="text" name="result1" placeholder="resuts"><br>
+
+<input type="text" class="form.control" id="date"  placeholder="resuts"><br>
 
 <strong>Day</strong> 
-<input type="text" name="result2" placeholder="resuts">
+<output type="text" class="form.control" id="date"placeholder="resuts"></output>
 
 <strong>Akan Name</strong> 
-<input type="text" name="akanname" value="akanname" placeholder="resuts"><br><br>
+<ouput type="text" class="form.control" id="date"  value="" placeholder="resuts"></ouput><br><br>
 
 
 <select>
